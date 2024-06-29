@@ -1,0 +1,181 @@
+/*Common Css Starts*/
+:root{
+    --font-family: "Poppins", sans-serif;
+    --second-family: "PT Sans", sans-serif;
+    --Common-color:#FFCC00;
+    --second-color: #353535;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1170px;
+    margin:auto ;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ol,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.align-center{
+    align-items: center;
+}
+body{
+    font-family: var(--font-family);
+}
+.btn{
+    border-radius: 20px;
+    padding: 22px 45px;
+    display: inline-block;
+    background-color: var(--Common-color);
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 180%;
+    margin: 45px 56px 0 0;
+}
+
+.btn.outline{
+    background-color: transparent;
+    color: var(--second-color);
+   border: 1px solid var(--second-color);
+}
+/*Common Css Ends*/
+
+/*Nav starts here*/
+
+nav .logo{
+width: 30%;
+}
+nav .menu{
+    width: 70%;
+    text-align: right;
+
+}
+nav .menu ul li{
+    display: inline-block;
+}
+nav .menu ul li a{
+font-weight: 500;
+font-size: 15px;
+line-height: 200%;
+color: var(--second-color);
+text-transform: uppercase;
+padding: 18px 22px 5px;
+display: inline-block;
+position: relative;
+}
+
+nav .menu ul li a::after{
+    content:"";
+    width: 0%;
+    height: 1px;
+    background-color: var(--second-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+
+}
+nav .menu ul li:hover a::after{
+width: 100%;
+}
+/*Nav ends here*/
+
+/*Banner-part Starts*/
+#hero{
+    margin-top: 56px;
+}
+
+#hero .herotext,
+#hero .heroimg{
+    width: 50%;
+}
+#hero .herotext h4{
+    font-weight: 400;
+    font-style: 24px;
+    color: var(--second-color);
+}
+#hero .herotext h1{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--second-color);
+    margin: 15px 0 25px;
+}
+#hero .herotext p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+    color: var(--second-color);
+}
+#hero .herotext .btn span img{
+    width: 24px;
+    margin-top: auto;
+}
+#hero .follow h5{
+font-weight: 500;
+font-size: 22px;
+line-height: 170%;
+color: var(--second-color);
+margin: auto;
+}
+#hero .follow img{
+   margin-top: 10px;
+   padding: 0 15px 0 15px;
+  
+}
+#hero .mouse{
+  margin-left: 500px;
+  margin-top: 50px;
+}
+/*Banner-part ends*/
+
+/*Box part start*/
+
+#box .boximg{
+width: 50%;
+}
+
+#box .boxtext{
+width: 50%;
+}
+#box{
+    background: linear-gradient(130deg, #fc0 0%, #fff5cb 100%);
+    margin-top: 104px;
+    
+}
+#box .boximg{
+    margin-top: 90px;
+}
+
+#box .boxtext h1{
+font-family: var(--second-family);
+font-weight: 700;
+font-size: 50px;
+color: var(--second-color);
+margin-bottom: 26px;
+margin-top: 78px;
+}
+#box .boxtext p{
+font-weight: 400;
+font-size: 20px;
+line-height: 190%;
+color: var(--second-color);
+}
+#box .boxtext img{
+  margin-left: 60%;
+  margin-top: 80px;
+  display:inline-block;
+}
+/*Box part start*/
+
